@@ -5,25 +5,19 @@
 We explore incorporating LLM-based agents into the task of multimodal controversy detection, thereby enhancing the explainability of the process.
 
 <p align="center">
-    <a href="figures/pic1.pdf" target="_blank">
-        <img src="figures/pic1.png" alt="pic1" width="400">
-    </a>  
+    <img src="figures/pic1.png" alt="pic1" width="400">
 </p>
 
 ## :memo: Overall Framework
 We introduce a novel Agent-based Multimodal Controversy Detection (AgentMCD) framework that employs a three-stage reasoning process to systematically evaluate controversy. Additionally, we propose a multi-agent simulation mechanism designed to model the formation of controversy in the early stages of video dissemination.
 <p align="center">
-    <a href="figures/pic2.pdf" target="_blank">
-        <img src="figures/pic2.png" alt="pic2" width="900">
-    </a>   
+    <img src="figures/pic2.png" alt="pic2" width="900">
 </p>
 
 ## :mag: Case Study
 We present case studies that highlight the good explainability of our framework.
 <p align="center">
-    <a href="figures/pic3.pdf" target="_blank">
-        <img src="figures/pic3.png" alt="pic3" width="900">
-    </a>    
+    <img src="figures/pic3.png" alt="pic3" width="900">
 </p>
 
 ## :rocket: Getting Started
