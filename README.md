@@ -29,7 +29,7 @@ Install the dependencies using pip
 ```bash
 pip install -r requirements.txt
 ```
-Start training and testing!
+Let's start!
 ```bash
 python main.py
 ```
