@@ -57,9 +57,9 @@ As discussed, LLMs may occasionally produce irrelevant or harmful outputs, neces
 If you find our paper and code useful in your research, please consider giving a star :star: and citation :book:.
 
 ```BibTeX
-@inproceedings{mmcd,
+@inproceedings{agent_mcd,
   author       = {Xu, Tianjiao and Gao, Jinfei and Kong, Keyi and Yin, Jianhua and Gan, Tian and Nie, Liqiang},
-  title        = {A Chinese Multimodal Social Video Dataset for Controversy Detection},
+  title        = {Generative_Agents_for_Multimodal_Controversy_Detection},
   booktitle    = {International Joint Conferences on Artificial Intelligence},
   publisher    = {{ACM}},
   year         = {2025},
