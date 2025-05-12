@@ -1,6 +1,5 @@
 <h1 align="center"> <a href=>Generative Agents for Multimodal Controversy Detection</a></h2>
 
-
 ## :sparkles: Keypoints
 We explore incorporating LLM-based agents into the task of multimodal controversy detection, thereby enhancing the explainability of the process.
 
@@ -25,15 +24,42 @@ Dependencies
 - Python: 3.9.2
 - Pytorch: 1.13.1+cu117
 
-Install the dependencies using pip
+To begin, install the necessary dependencies using pip:
 ```bash
 pip install -r requirements.txt
 ```
-Let's start!
+
+Next, prepare the Multimodal Controversy Detection (MMCD) dataset by creating a new folder named `dataset`. Within this folder, place the validation and test data files, specifically `metadata_valid.json` and `metadata_test.json`, which can be obtained from the [MMCD repository](https://github.com/skylie-xtj/MM_Controversy_Detection_Released).
 ```bash
-python main.py
+mkdir dataset
+mkdir storage
+python generate_role.py
 ```
-Code will be released upon the acceptance of this paper...
+
+Download the [GLM-4-9B-CHAT model](https://huggingface.co/THUDM/glm-4-9b-chat/tree/main) and then execute the model using the following command:
+```bash
+bash lm_run.sh
+```
+
+Once everything is set up, you can initiate the process:
+```bash
+python rich_comments_main.py
+python simulate_comments_train.py
+python simulate_comments_test.py
+```
 
 ## :busts_in_silhouette: Ethical Statement
 As discussed, LLMs may occasionally produce irrelevant or harmful outputs, necessitating caution when interpreting their results. In our approach, LLM-based multi-agent systems are employed solely to enhance the simulation of controversy formation. However, additional research is required for language models intended for practical applications to refine prediction accuracy and bolster the model's authenticity and safety, thereby mitigating potential user risks.
+
+## :book: Citation
+If you find our paper and code useful in your research, please consider giving a star :star: and citation :book:.
+
+```BibTeX
+@inproceedings{mmcd,
+  author       = {Xu, Tianjiao and Gao, Jinfei and Kong, Keyi and Yin, Jianhua and Gan, Tian and Nie, Liqiang},
+  title        = {A Chinese Multimodal Social Video Dataset for Controversy Detection},
+  booktitle    = {International Joint Conferences on Artificial Intelligence},
+  publisher    = {{ACM}},
+  year         = {2025},
+}
+```
