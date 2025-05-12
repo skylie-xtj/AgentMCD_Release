@@ -29,7 +29,7 @@ To begin, install the necessary dependencies using pip:
 pip install -r requirements.txt
 ```
 
-Next, prepare the Multimodal Controversy Detection (MMCD) dataset by creating a new folder named `dataset`. Within this folder, place the validation and test data files, specifically `metadata_valid.json` and `metadata_test.json`, which can be obtained from the [MMCD repository](https://github.com/skylie-xtj/MM_Controversy_Detection_Released).
+Next, prepare the Multimodal Controversy Detection (MMCD) dataset by creating a new folder named `dataset`. Within this folder, place the validation and test data files, specifically `metadata_valid.json` and `metadata_test.json`, which can be obtained from the [MMCD repository](https://github.com/skylie-xtj/MM_Controversy_Detection_Released) or alternatively downloaded [here](https://pan.quark.cn/s/886b78c6e67d) (password: UnWZ).
 ```bash
 mkdir dataset
 mkdir storage
@@ -47,6 +47,8 @@ python rich_comments_main.py
 python simulate_comments_train.py
 python simulate_comments_test.py
 ```
+
+Alternatively, the result files can be directly downloaded [here](https://pan.quark.cn/s/886b78c6e67d) (password: UnWZ), with the expected directory name "storage".
 
 ## :busts_in_silhouette: Ethical Statement
 As discussed, LLMs may occasionally produce irrelevant or harmful outputs, necessitating caution when interpreting their results. In our approach, LLM-based multi-agent systems are employed solely to enhance the simulation of controversy formation. However, additional research is required for language models intended for practical applications to refine prediction accuracy and bolster the model's authenticity and safety, thereby mitigating potential user risks.
