@@ -59,7 +59,7 @@ If you find our paper and code useful in your research, please consider giving a
 ```BibTeX
 @inproceedings{agent_mcd,
   author       = {Xu, Tianjiao and Gao, Jinfei and Kong, Keyi and Yin, Jianhua and Gan, Tian and Nie, Liqiang},
-  title        = {Generative_Agents_for_Multimodal_Controversy_Detection},
+  title        = {Generative Agents for Multimodal Controversy Detection},
   booktitle    = {International Joint Conferences on Artificial Intelligence},
   publisher    = {{ACM}},
   year         = {2025},
