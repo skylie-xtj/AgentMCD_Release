@@ -46,7 +46,7 @@ def pre_prompt0(des):
     user_prompt = f"""
 请根据以下信息，用数字0-9评估引起争议的可能性：
 视频描述内容：{des}
-请做出你判断争议的依据，并输出争议评分（0-9）。让我们一步步思考。
+请做出你判断争议的依据，并输出争议评分（0-9）。
 """.removeprefix("\n")
     return sys_prompt, user_prompt
 
