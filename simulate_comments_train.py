@@ -19,10 +19,10 @@ def prepare_dir():
     def ensureDir(dir_path):
         if not os.path.exists(dir_path):
             os.makedirs(dir_path)
-    ensureDir(f'{args.simulation_name}_{args.test_num}')
-    ensureDir(f'{args.simulation_name}_{args.test_num}' + "/running_logs")
-    ensureDir(f'{args.simulation_name}_{args.test_num}' + "/false_example")
-    ensureDir(f'{args.simulation_name}_{args.test_num}' + "/process")
+    ensureDir(f'AgentMCD_Release/storage/{args.simulation_name}_{args.test_num}')
+    ensureDir(f'AgentMCD_Release/storage/{args.simulation_name}_{args.test_num}' + "/running_logs")
+    ensureDir(f'AgentMCD_Release/storage/{args.simulation_name}_{args.test_num}' + "/false_example")
+    ensureDir(f'AgentMCD_Release/storage/{args.simulation_name}_{args.test_num}' + "/process")
     if os.path.exists(f'{args.simulation_name}_{args.test_num}' + "/system_log.log"):
         os.remove(f'{args.simulation_name}_{args.test_num}' + "/system_log.log")
     if os.path.exists(f'{args.simulation_name}_{args.test_num}' + "/running_logs/input_prompts.log"):
@@ -72,12 +72,12 @@ if __name__ == '__main__':
             name = args.simulation_name,
             group = args.dataset
         )
-    data_types = ['test']#['valid', 'test']
+    data_types = ['valid', 'test']
     for data_type in data_types:
         prepare_dir()
         data_path = f'AgentMCD_Release/dataset/metadata_{data_type}.json'
         datas = get_data(data_path)
-        with ThreadPoolExecutor(max_workers=1) as executor:
+        with ThreadPoolExecutor(max_workers=32) as executor:
             futures = []
             for i, data in enumerate(datas):
                 futures.append(executor.submit(run, args, data))
