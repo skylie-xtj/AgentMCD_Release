@@ -20,22 +20,3 @@ class abstract_avatar:
         self.avatar_id = avatar_id
         self.use_wandb = args.use_wandb
         self.memory = None
-
-    def _reaction(self):
-        """
-        Summarize the feelings of the avatar for recommended item list.
-        """ 
-        raise NotImplementedError
-    
-    def reflection(self):
-        """
-        Reflect on the observation bank
-        """
-        raise NotImplementedError
-
-    def up_date_taste(self):
-        """
-        Update the taste of the avatar
-        """
-        raise NotImplementedError
-
