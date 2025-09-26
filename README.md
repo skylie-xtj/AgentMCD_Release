@@ -61,7 +61,7 @@ If you find our paper and code useful in your research, please consider giving a
   author       = {Xu, Tianjiao and Gao, Jinfei and Kong, Keyi and Yin, Jianhua and Gan, Tian and Nie, Liqiang},
   title        = {Generative Agents for Multimodal Controversy Detection},
   booktitle    = {International Joint Conferences on Artificial Intelligence},
-  publisher    = {{ACM}},
+  page         = {9963--9971},
   year         = {2025},
 }
 ```
