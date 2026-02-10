@@ -95,24 +95,6 @@ def pre_prompt2(comment):
 """.removeprefix("\n")
     return sys_prompt, user_prompt
 
-def pre_prompt3(summary):
-    sys_prompt = f"""
-# 争议评估
-## 任务
-请整体分析争议评分总结，综合判断争议。
-请你用数字0-9(包括0和9)评价引起争议的可能性。数字越高代表越可能引起争议。请注意，你只能输出0-9之间的任意一位数字，不允许输出其他内容。
-
-## 输出格式
-判断依据: [你的判断依据]
-争议评分: [仅评分]
-""".removeprefix("\n")
-    user_prompt = f"""
-以下是视频争议描述的总结：
- {summary}
-请做出你判断争议的依据，并输出争议评分（0-9）。让我们一步一步来思考。
-""".removeprefix("\n")
-    return sys_prompt, user_prompt
-
 def find_score(response):
     try:
         return int(re.findall(r'\d+', response[-1]['content'])[-1])
@@ -146,12 +128,6 @@ def get_result(data):
     summary2 = response[-1]['content']
     response = find_score(response)
     save_file['result2'] = response
-    
-    summary = [summary0, summary1, summary2]
-    sys_prompt, user_prompt = pre_prompt3(summary)
-    save_file['final'] = response
-    response = int(re.findall(r'\d+', str(response))[-1])
-    save_file['result'] = response
     
     json_str = json.dumps(save_file, ensure_ascii=False, indent=4)
     summary = []
