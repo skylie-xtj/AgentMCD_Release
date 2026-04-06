@@ -1,4 +1,38 @@
-<h1 align="center"> <a href=>Generative Agents for Multimodal Controversy Detection</a></h2>
+<a id="top"></a>
+
+<div align="center">
+
+# 🤖 Generative Agents for Multimodal Controversy Detection
+
+<p>
+  <b>Tianjiao Xu</b><sup>1</sup> &nbsp;
+  <b>Jinfei Gao</b><sup>1</sup> &nbsp;
+  <b>Keyi Kong</b><sup>1</sup> &nbsp;
+  <b>Jianhua Yin</b><sup>1</sup> &nbsp;
+  <b>Tian Gan</b><sup>1</sup><sup>*</sup> &nbsp;
+  <b>Liqiang Nie</b><sup>2</sup>
+</p>
+
+<p>
+  <sup>1</sup>Shandong University &nbsp;
+  <sup>2</sup>Harbin Institute of Technology (Shenzhen)
+</p>
+
+<p>
+  <sup>*</sup> Corresponding author
+</p>
+
+<p>
+  <a href="#">
+    <img src="https://img.shields.io/badge/IJCAI-2025-blue.svg?style=flat-square">
+  </a>
+</p>
+
+<p>
+  <b>An agent-based multimodal controversy detection framework that leverages LLM-powered generative agents to simulate user interactions and provide explainable multi-aspect reasoning.</b>
+</p>
+
+</div>
 
 ## :sparkles: Keypoints
 We explore incorporating LLM-based agents into the task of multimodal controversy detection, thereby enhancing the explainability of the process.
