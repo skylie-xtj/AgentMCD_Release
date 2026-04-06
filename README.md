@@ -23,7 +23,7 @@
 </p>
 
 <p>
-  <a href="#">
+  <a href="https://www.ijcai.org/proceedings/2025/1107">
     <img src="https://img.shields.io/badge/IJCAI-2025-blue.svg?style=flat-square">
   </a>
 </p>
